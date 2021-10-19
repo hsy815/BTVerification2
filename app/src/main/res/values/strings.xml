@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">宝藤外采</string>
+    <string name="toast_print_success">打印成功</string>
+    <string name="toast_print_error">打印失败,请重试</string>
+    <string name="toast_high_temperature">打印机温度过高,请稍后再试</string>
+    <string name="toast_no_paper">打印机没有纸啦,换完纸后请重试</string>
+    <string name="toast_check">请检查图片</string>
+    <string name="unknown_error">未知错误，请重试</string>
+    <string name="scan_refresh">刷新</string>
+    <string name="scan_p">打印</string>
+
+</resources>
