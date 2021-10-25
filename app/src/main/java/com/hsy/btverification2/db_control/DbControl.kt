@@ -191,7 +191,7 @@ class DbControl private constructor(context: Context) {
     fun selectIsSealingBox(): String? {
         val list: ArrayList<String?> = ArrayList()
         val sql =
-            "SELECT distinct sealingBoxCode FROM Statistics WHERE isSealingBox = 0"
+            "SELECT distinct sealingBoxCode FROM Statistics WHERE isSealingBox = 0 AND isSubmissionStatus = 1"
         val cursor: Cursor = database.rawQuery(sql, null)
         cursor.moveToFirst()
         while (!cursor.isAfterLast) {

@@ -88,7 +88,7 @@ class LoginActivity : BaseActivity() {
         if (!TextUtils.isEmpty(isSealingBoxCount)) {
             AlertDialog.Builder(this)
                 .setTitle("提示")
-                .setMessage("存在未封箱数据是否完成采样并封箱？？？")
+                .setMessage("存在已提交但未封箱数据,是否继续采样或封箱？？？")
                 .setPositiveButton("确定") { dialog, _ ->
                     val samplingPerson = DbControl.getInstance(this@LoginActivity)
                         .selectIsSealingBoxSP(isSealingBoxCount!!)

@@ -102,6 +102,7 @@ class ScanHttpManager(
                 }
                 .setNegativeButton("取消") { dialog, _ ->
                     dialog.dismiss()
+                    loadingDialog.dismiss()
                 }
                 .setCancelable(false)
                 .show()
