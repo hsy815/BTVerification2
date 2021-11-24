@@ -133,7 +133,7 @@ abstract class BaseActivity : AppCompatActivity() {
     fun getDate6(): String {
         val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd")
         val calendar = Calendar.getInstance()
-        calendar.add(Calendar.DAY_OF_YEAR, -7)
+        calendar.add(Calendar.DAY_OF_YEAR, -30)
         return simpleDateFormat.format(calendar.time)
     }
 

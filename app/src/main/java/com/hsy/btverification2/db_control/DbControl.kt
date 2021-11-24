@@ -150,7 +150,7 @@ class DbControl private constructor(context: Context) {
      */
     fun selectStatisticsSubmissionCodeIs(submissionCode: String): Int {
         val sql =
-            "SELECT isSubmissionStatus FROM Statistics WHERE submissionCode = '$submissionCode'"
+            "SELECT isSubmissionStatus FROM Statistics WHERE submissionCode = '$submissionCode' OR printCode = '$submissionCode'"
         val cursor: Cursor = database.rawQuery(sql, null)
         cursor.moveToFirst()
         val mCount = cursor.getInt(0)

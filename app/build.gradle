@@ -10,8 +10,8 @@ android {
         applicationId "com.hsy.btverification2"
         minSdk 27
         targetSdk 31
-        versionCode 7
-        versionName "宝藤(7)号软件为您服务"
+        versionCode 8
+        versionName "宝藤(8)号软件为您服务"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
